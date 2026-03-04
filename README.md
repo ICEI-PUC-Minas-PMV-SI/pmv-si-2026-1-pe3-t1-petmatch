@@ -6,7 +6,9 @@
 
 `SEMESTRE: 3º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+PetMatch é uma plataforma digital desenvolvida para facilitar a adoção responsável de animais, conectando ONGs, adotantes e voluntários de forma simples, intuitiva e eficiente. A ferramenta oferece recursos como cadastro de pets para adoção, sistema de recomendação com base no perfil do adotante, geolocalização de eventos e feiras, além da possibilidade de atuação de doadores independentes e voluntários no apoio às instituições de proteção animal.
+
+Com foco em usabilidade, empatia e impacto social, o PetMatch busca reduzir o número de animais abandonados e contribuir para um futuro mais digno e afetuoso entre humanos e pets.
 
 ## Integrantes
 
