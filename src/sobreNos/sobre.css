@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+  background-color: #f2f2eb;
+}
+
+/* HEADER padrão */
+.header-container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 70px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.menu-links a,
+.btn-entrar {
+  color: #693421;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Orelega One", serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-entrar {
+  margin-right: 10px;
+}
+
+.menu-links a:hover,
+.btn-entrar:hover {
+  color: #54a09a;
+  font-family: "Orelega One", serif;
+  transform: scale(1.05);
+}
+
+.btn-cadastro, .btn-perfil {
+  background-color: #54a09a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Orelega One", serif !important;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cadastro:hover,
+.btn-perfil:hover {
+  background-color: #32928d;
+}
+
+.btn-sair {
+  background: none;
+  color: #693421;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: "Orelega One", serif;
+  font-weight: bold;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-sair:hover {
+  background: #f0eee6;
+  color: #32928d;
+}
+
+.menu-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nome-usuario {
+  color: #693421;
+  font-family: "Orelega One", serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-link {
+  color: #693421;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Orelega One", serif;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  color: #693421;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-family: "Orelega One", serif;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0eee6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main.container {
+  max-width: 1216px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.sobre {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 48px;
+}
+
+.sobre h1 {
+  font-size: 36px;
+  color: #32928d;
+  font-family: "Orelega One", serif;
+  margin-bottom: 32px;
+}
+
+.sobre h2 {
+  font-size: 22px;
+  color: #693421;
+  margin-top: 28px;
+}
+
+.sobre p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.sobre ul {
+  margin: 16px 0 24px 20px;
+  padding-left: 20px;
+}
+
+.sobre li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* FOOTER padrão */
+footer {
+  height: 36px;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+footer a {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
