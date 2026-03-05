@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="../cadastro_login_catalogo/catalogo.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetMatch - Adote com amor</title>
+
+    <!-- Estilos globais -->
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- Fonte personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet" />
+
+    <style>
+      .menu-link-active {
+        color: #54a09a !important;
+        cursor: default !important;
+        text-decoration: none !important;
+        pointer-events: none;
+      }
+      .menu-link-active:hover {
+        color: #54a09a !important;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+      }
+      menu, ol, ul {
+        list-style: none;
+      }
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 240px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Cabeçalho principal do PetMatch -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="../home definitiva/home.html">
+            <img src="LOGO 3 1.png" alt="PetMatch" />
+          </a>
+        </div>
+        <nav class="menu">
+          <div class="menu-links">
+            <a href="../cadastro_login_catalogo/catalogo.html">Quero adotar</a>
+            <div class="dropdown">
+              <a href="#" class="menu-link">Quero ajudar</a>
+              <div class="dropdown-content">
+                <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+                <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+              </div>
+            </div>
+            <a href="../blog/blog.html">Blog</a>
+            <a href="../pagina protetores/protetores.html">Protetores</a>
+          </div>
+          <div class="menu-usuario">
+            <!-- Conteúdo aqui será gerenciado pelo active-menu.js -->
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="homepage">
+      <section class="container">
+        <!-- Banner principal -->
+        <div class="banner">
+          <img src="pexels-lum-3-n-44775-4060140.png" class="banner-img" alt="Banner" />
+          <h2 class="banner-text">Faça a diferença sem sair de casa!</h2>
+        </div>
+
+        <!-- Botões de ação principais -->
+        <div class="botoes-acao">
+          <button class="btn-verde" onclick="location.href='../cadastro_login_catalogo/catalogo.html'">Quero adotar</button>
+          <button class="btn-claro" onclick="location.href='../cadastro_login_catalogo/cadastro-pets.html'">Quero divulgar um animal</button>
+        </div>
+
+        <!-- Chamada para adoção -->
+        <section class="chamada">
+          <h1>Tem um amigo esperando por você!</h1>
+          <p>
+            Novos cães e gatos foram resgatados e estão prontos para encontrar um lar cheio de carinho.<br />
+            Escolha adotar. Acesse e mude uma vida! 🐾💛
+          </p>
+        </section>
+
+        <!-- Cards de animais (serão injetados aqui) -->
+        <section class="lista-pets"></section>
+      </section>
+
+      <!-- Ver mais -->
+      <div class="ver-mais-container">
+        <button class="btn-ver-mais">Ver mais</button>
+      </div>
+
+      <!-- Por que adotar -->
+      <section class="secao-motivos">
+        <h2 class="titulo-secao">Por que adotar?</h2>
+        <div class="motivos">
+          <div class="motivo">
+            <img src="open-doodles-doggie0.png" alt="Ilustração 1" />
+            <p>Agora mesmo, milhares de cãezinhos e gatinhos sonham com um lar e alguém para amar.</p>
+          </div>
+          <div class="motivo">
+            <img src="open-doodles-playing0.png" alt="Ilustração 2" />
+            <p>A alegria de ver um bichinho florescer, cheio de vida e felicidade, após receber amor e cuidados.</p>
+          </div>
+          <div class="motivo">
+            <img src="stuck-at-home-pet-dog-10.png" alt="Ilustração 3" />
+            <p>Se você pode mudar o destino de um animal de rua, por que não faria isso?</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Match ideal -->
+      <section class="match-final">
+        <h2>Seu match ideal!</h2>
+      </section>
+
+      <!-- Rodapé -->
+      <footer>
+        <div class="footer-container">
+          <a href="../sobreNos/sobre.html">Sobre</a>
+          <a href="../politicaPrivacidade/politica.html">Política de Privacidade</a>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const botoesAdotar = document.querySelectorAll('.btn-adotar');
+        botoesAdotar.forEach(botao => {
+          botao.addEventListener('click', function() {
+            window.location.href = '../cadastro_login_catalogo/catalogo.html';
+          });
+        });
+
+        const botaoVerMais = document.querySelector('.btn-ver-mais');
+        if (botaoVerMais) {
+          botaoVerMais.addEventListener('click', function() {
+            window.location.href = '../cadastro_login_catalogo/catalogo.html';
+          });
+        }
+      });
+    </script>
+
+    <script src="../active-menu.js"></script>
+
+    <script type="module">
+      import { getAllPets, criaPetCard } from '../cadastro_login_catalogo/shared-pets.js';
+
+      const cardsContainer = document.querySelector('.lista-pets');
+      cardsContainer.innerHTML = '';
+
+      const pets = getAllPets().slice(0, 4); // Exibe os 4 primeiros pets reais
+      pets.forEach(pet => cardsContainer.appendChild(criaPetCard(pet)));
+    </script>
+  </body>
+</html>
