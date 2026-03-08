@@ -1,10 +1,17 @@
-# 2. ESTADO DA ARTE
-O estado da arte é um mapeamento de toda a produção acadêmica sobre um assunto específico, aqui especificamente sobre o tema escolhido para o seu trabalho. A ideia consiste em reunir as conclusões que outras pesquisas científicas chegaram sobre um determinado assunto. Neste momento você deverá buscar respostas para as seguintes perguntas:
+## 2. Estado da Arte
 
-1.	Quais pesquisas estão sendo desenvolvidas sobre esse tema?
-2.	Quem está pesquisando e onde?
-3.	O que as atuais pesquisas científicas concluíram sobre o tema? 
-4.	Quais as divergências dos pesquisadores sobre o assunto? 
-5.	Quais aspectos carecem de maior abordagem?
+O desenvolvimento de plataformas digitais voltadas à adoção de animais e à proteção de fauna urbana tem recebido atenção crescente tanto na literatura acadêmica quanto no mercado de tecnologia. Esta seção apresenta um panorama dos principais trabalhos relacionados ao tema, evidenciando os avanços, lacunas e oportunidades que embasam a proposta do PetMatch.
 
-É importante referenciar estas pesquisas, fazendo as devidas citações de acordo com as normas da ABNT e colocando as referências completas ao final do trabalho.
+Mondelli et al. (2004) realizaram estudo pioneiro no Brasil sobre os motivos que levam à devolução de cães após a adoção. Os resultados indicaram que incompatibilidade entre o perfil do animal e o estilo de vida do adotante é uma das principais causas de abandono secundário. Os autores ressaltam que processos seletivos mais rigorosos e informativos, combinados com acompanhamento pós-adoção, são fundamentais para o sucesso das adoções. Esse achado fundamenta diretamente a proposta do sistema de recomendação baseado em perfil do PetMatch.
+
+No campo dos sistemas de recomendação aplicados a contextos de escolha personalizada, Ricci, Rokach e Shapira (2015) apresentam uma revisão abrangente das principais abordagens filtragem colaborativa, filtragem baseada em conteúdo e modelos híbridos , demonstrando que sistemas de recomendação bem calibrados aumentam significativamente a satisfação do usuário e a taxa de conversão em plataformas digitais. A aplicação desses princípios ao contexto de adoção animal representa uma oportunidade de inovação ainda pouco explorada.
+
+Tello e Rodríguez (2020) analisaram o impacto de plataformas digitais no processo de adoção de animais em países da América Latina, concluindo que a digitalização do processo reduz o tempo médio de adoção e amplia o alcance geográfico das ONGs. Os autores identificaram, contudo, que a simples existência de uma plataforma não é suficiente: a usabilidade, a qualidade das informações cadastradas e a confiança gerada pelo sistema são determinantes para a adesão dos usuários.
+
+Faraco e Seminotti (2004) discutem a relação humano-animal sob a perspectiva da psicologia e do bem-estar, argumentando que a compatibilidade entre o perfil comportamental do animal e as expectativas do adotante é condição essencial para a estabilidade do vínculo afetivo pós-adoção. Esse referencial teórico reforça a necessidade de ferramentas de triagem e recomendação no processo adotivo.
+
+No contexto do voluntariado digital, Hustinx et al. (2010) investigaram as motivações e barreiras para o engajamento de voluntários em causas sociais mediadas por tecnologia. Os resultados apontam que plataformas que oferecem clareza sobre as atividades disponíveis, flexibilidade de participação e retorno sobre o impacto gerado tendem a apresentar maior taxa de retenção de voluntários. Esses princípios orientam o design do módulo de voluntariado do PetMatch.
+
+Pereira e Marguti (2015), em publicação do Instituto de Pesquisa Econômica Aplicada (IPEA), abordam o papel das ONGs no Brasil e os desafios enfrentados por essas organizações em termos de sustentabilidade, captação de recursos e comunicação com a sociedade. Os autores apontam que a adoção de ferramentas digitais pode ampliar significativamente a capacidade operacional dessas entidades, especialmente aquelas de pequeno porte com atuação local.
+
+Em síntese, a literatura revisada converge para a constatação de que: (i) a incompatibilidade entre adotante e animal é a principal causa de insucesso nas adoções; (ii) sistemas de recomendação personalizados têm potencial comprovado para melhorar esse processo; (iii) a digitalização amplia o alcance das ONGs, mas exige atenção à usabilidade e à confiança; e (iv) o engajamento de voluntários depende de canais estruturados e transparentes. O PetMatch se propõe a endereçar cada um desses aspectos em uma solução integrada e acessível.
