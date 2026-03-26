@@ -31,19 +31,31 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | O sistema deve permitir o gerenciamento de usuários |
+| RF2 |	O sistema deve permitir o cadastro de animais para adoção |
+| RF3	| O sistema deve permitir que usuários filtrem animais com base em suas preferências |
+| RF4	| O sistema deve permitir que usuários filtrem animais com base em sua geolocalização |
+| RF5	| O sistema deve recomendar animais ao usuário com base em seu histórico de navegação |
+| RF6 |	O sistema deve permitir o cadastro de voluntários interessados em apoiar as ONGs |
+| RF7 |	O sistema deve permitir gerenciamento de eventos de adoção e feiras organizadas pelas ONGs |
+| RF8 |	O sistema deve oferecer informações sobre os termos de uso |
+| RF9 |	O sistema deve permitir a postagem de fotos com legendas dos pets pelos usuários |
+| RF10 |	O sistema deve possuir um sistema de notificações para atualizações sobre novos animais disponíveis e eventos |
+| RF11 |	O sistema deve incorporar mecanismos de feedback para que usuários comentem suas experiências |
+| RF12 |	O sistema deve permitir anúncios |
+| RF13 |	O sistema deve incluir sistema de benefícios para usuários em parceria com empresas do ramo pet |
+| RF14 |	O sistema deve incluir sistema de benefícios para usuários em parceria com empresas do ramo pet |
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF1 | O sistema deve ser responsivo e funcional em celulares, tablets e computadores. |
+| RNF2 | O sistema deve garantir a segurança dos dados dos adotantes, ONGs e voluntários, seguindo a LGPD (Lei 13.709/2018). |
+| RNF3 |	O sistema deve ser compatível com as versões mais recentes dos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari. |
+| RNF4 |	O tempo de resposta para buscas de animais na plataforma deve ser inferior a 3 segundos de performace. |
+| RNF5 |	O código da aplicação deve ser modular e documentado, facilitando manutenção e evolução. |
+| RNF6 |	A aplicação deve implementar autenticação e controle de acesso para proteger informações sensíveis (ex: dados de adotantes e ONGs). |
 
 ### 3.3.3 Usuários 
 
