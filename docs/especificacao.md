@@ -31,20 +31,19 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | O sistema deve permitir o gerenciamento de usuários |
-| RF2 |	O sistema deve permitir o cadastro de animais para adoção |
-| RF3	| O sistema deve permitir que usuários filtrem animais com base em suas preferências |
-| RF4	| O sistema deve permitir que usuários filtrem animais com base em sua geolocalização |
-| RF5	| O sistema deve recomendar animais ao usuário com base em seu histórico de navegação |
-| RF6 |	O sistema deve permitir o cadastro de voluntários interessados em apoiar as ONGs |
-| RF7 |	O sistema deve permitir gerenciamento de eventos de adoção e feiras organizadas pelas ONGs |
-| RF8 |	O sistema deve oferecer informações sobre os termos de uso |
-| RF9 |	O sistema deve permitir a postagem de fotos com legendas dos pets pelos usuários |
-| RF10 |	O sistema deve possuir um sistema de notificações para atualizações sobre novos animais disponíveis e eventos |
-| RF11 |	O sistema deve incorporar mecanismos de feedback para que usuários comentem suas experiências |
-| RF12 |	O sistema deve permitir anúncios |
-| RF13 |	O sistema deve incluir sistema de benefícios para usuários em parceria com empresas do ramo pet |
-| RF14 |	O sistema deve incluir sistema de benefícios para usuários em parceria com empresas do ramo pet |
+| RF1 | Gerenciar Usuários | Processamento de inclusão, alteração, exclusão e consulta de usuários |
+| RF2 | Gerenciar Animais para Adoção | Processamento de cadastro, alteração, exclusão e consulta de animais disponíveis para adoção |
+| RF3 | Filtrar Animais por Preferências | Permitir que usuários filtrem animais com base em suas preferências (porte, idade, espécie, etc.) |
+| RF4 | Filtrar Animais por Geolocalização | Permitir que usuários filtrem animais com base em sua localização geográfica |
+| RF5 | Recomendar Animais | Recomendar animais ao usuário com base em seu histórico de navegação |
+| RF6 | Gerenciar Voluntários | Processamento de cadastro, alteração, exclusão e consulta de voluntários interessados em apoiar ONGs |
+| RF7 | Gerenciar Eventos de Adoção | Processamento de cadastro, alteração, exclusão e consulta de eventos de adoção e feiras organizadas pelas ONGs |
+| RF8 | Consultar Termos de Uso | Disponibilizar informações sobre os termos de uso do sistema |
+| RF9 | Postar Fotos de Pets | Permitir que usuários publiquem fotos de pets com legendas |
+| RF10 | Gerenciar Notificações | Enviar notificações sobre novos animais disponíveis e eventos |
+| RF11 | Gerenciar Feedback dos Usuários | Permitir que usuários registrem comentários e avaliações sobre suas experiências |
+| RF12 | Gerenciar Anúncios | Permitir a criação, edição, exclusão e exibição de anúncios no sistema |
+| RF13 | Gerenciar Benefícios e Parcerias | Processamento de cadastro e gestão de benefícios para usuários em parceria com empresas do ramo pet |
 
 ### 3.3.2 Requisitos Não Funcionais
 
