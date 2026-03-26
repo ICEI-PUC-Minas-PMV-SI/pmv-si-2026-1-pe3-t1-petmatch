@@ -34,11 +34,16 @@ O PetMatch não contempla:
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
-|--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|---|----------|---------------------|
+| 1 | Centralização de informações sobre animais disponíveis para adoção | Essencial |
+| 2 | Facilidade na busca e filtragem de animais por perfil e localização | Essencial |
+| 3 | Melhoria na comunicação entre usuários, ONGs e voluntários | Essencial |
+| 4 | Aumento da visibilidade para ONGs e eventos de adoção | Essencial |
+| 5 | Conexão facilitada entre voluntários e ONGs | Essencial |
+| 6 | Recomendação personalizada de animais para adotantes | Recomendável |
+| 7 | Redução do tempo de permanência dos animais em abrigos | Recomendável |
+| 8 | Promoção da adoção responsável por meio de conteúdo educativo | Recomendável |
+
 
 ## 3.3 Descrição geral do produto
 
