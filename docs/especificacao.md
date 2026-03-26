@@ -1,20 +1,35 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades dos usuários do sistema PetMatch, incluindo adotantes, ONGs de proteção animal e voluntários, que devem ser atendidas pela plataforma digital proposta, visando otimizar o processo de adoção de animais e promover a posse responsável.
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto será denominado **PetMatch**.  
+
+O sistema será composto pelos seguintes módulos principais:
+- Módulo de gerenciamento de usuários (adotantes, ONGs e voluntários);
+- Módulo de cadastro e gerenciamento de animais para adoção;
+- Módulo de recomendação de animais com base no perfil do usuário;
+- Módulo de busca e filtragem (preferências e geolocalização);
+- Módulo de eventos de adoção;
+- Módulo de voluntariado;
+- Módulo de notificações;
+- Módulo de conteúdo informativo e termos de uso;
+- Módulo de feedback e avaliações;
+- Módulo de parcerias e benefícios.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Conectar adotantes, ONGs e voluntários em uma plataforma digital integrada, facilitando o processo de adoção responsável, promovendo o bem-estar animal e ampliando o alcance das ações de proteção animal por meio da tecnologia.
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O PetMatch não contempla:
+- Processamento de pagamentos ou transações financeiras;
+- Avaliação comportamental profissional dos animais;
+- Responsabilidade legal sobre o processo de adoção (atuando apenas como intermediador);
+- Serviços veterinários ou acompanhamento pós-adoção;
+- Integração com sistemas governamentais ou bases oficiais de controle animal.
 
 ### 3.2.4 Benefícios do produto
 
@@ -59,85 +74,135 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
-|--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+|------|-----------|
+| Administrador | Usuário responsável pela administração geral do sistema, com acesso completo às funcionalidades, incluindo gestão de usuários, conteúdos, anúncios e monitoramento da plataforma. |
+| ONG | Usuário institucional responsável pelo cadastro e gerenciamento de animais disponíveis para adoção, eventos e oportunidades de voluntariado. |
+| Adotante | Usuário interessado em adotar um animal, podendo buscar, filtrar, visualizar recomendações e interagir com ONGs. |
+| Voluntário | Usuário interessado em apoiar ONGs, podendo se cadastrar e participar de atividades como eventos, transporte de animais ou lar temporário. |
 
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
-
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+#### Gerenciar Animais (CSU01)
 
-#### Gerenciar Professor (CSU01)
+**Sumário:** A ONG realiza a gestão (inclusão, remoção, alteração e consulta) dos dados dos animais disponíveis para adoção.
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+**Ator Primário:** ONG  
+**Ator Secundário:** Administrador  
 
-Ator Primário: Secretária.
+**Pré-condições:**  
+A ONG deve estar cadastrada e autenticada no sistema.
 
-Ator Secundário: Coordenador.
+**Fluxo Principal:**
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+1) A ONG requisita a gestão de animais.  
+2) O Sistema apresenta as operações disponíveis: inclusão, alteração, exclusão e consulta de animais.  
+3) A ONG seleciona a operação desejada ou opta por finalizar o caso de uso.  
+4) Caso deseje continuar, o fluxo retorna ao passo 2; caso contrário, o caso de uso é encerrado.
 
-Fluxo Principal:
+---
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+**Fluxo Alternativo (3): Inclusão**
 
-Fluxo Alternativo (3): Inclusão
+a) A ONG solicita a inclusão de um novo animal.  
+b) O Sistema apresenta um formulário para cadastro do animal (nome, espécie, idade, porte, descrição, fotos, status de saúde, localização).  
+c) A ONG preenche os dados solicitados.  
+d) O Sistema valida as informações.  
+e) Se válidas, o animal é cadastrado; caso contrário, o sistema solicita correção dos dados.
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+---
 
-Fluxo Alternativo (3): Remoção
+**Fluxo Alternativo (3): Remoção**
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+a) A ONG seleciona um animal e solicita sua remoção.  
+b) O Sistema verifica se o animal pode ser removido.  
+c) Se permitido, realiza a remoção; caso contrário, informa a impossibilidade.
 
-Fluxo Alternativo (3): Alteração
+---
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+**Fluxo Alternativo (3): Alteração**
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+a) A ONG altera os dados de um animal.  
+b) O Sistema valida as informações.  
+c) Se válidas, atualiza os dados; caso contrário, informa o erro.
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+---
+
+**Fluxo Alternativo (3): Consulta**
+
+a) A ONG solicita a listagem ou busca de animais.  
+b) O Sistema exibe os resultados.  
+c) A ONG seleciona um animal para visualizar detalhes.
+
+---
+
+**Pós-condições:**  
+Um animal foi cadastrado, alterado, removido ou consultado.
+
+---
+
+#### Buscar e Filtrar Animais (CSU02)
+
+**Sumário:** O Adotante busca e filtra animais disponíveis para adoção.
+
+**Ator Primário:** Adotante  
+
+**Pré-condições:**  
+O usuário deve estar autenticado no sistema.
+
+**Fluxo Principal:**
+
+1) O usuário acessa a funcionalidade de busca.  
+2) O Sistema apresenta opções de filtro (espécie, porte, idade, localização, comportamento).  
+3) O usuário define os critérios desejados.  
+4) O Sistema exibe os animais compatíveis.
+
+**Pós-condições:**  
+Lista de animais filtrados exibida ao usuário.
+
+---
+
+#### Recomendar Animais (CSU03)
+
+**Sumário:** O Sistema recomenda animais com base no perfil do usuário.
+
+**Ator Primário:** Adotante  
+
+**Pré-condições:**  
+O usuário deve ter preenchido informações de perfil ou histórico.
+
+**Fluxo Principal:**
+
+1) O usuário acessa recomendações.  
+2) O Sistema analisa preferências e histórico.  
+3) O Sistema exibe sugestões de animais compatíveis.
+
+**Pós-condições:**  
+Lista personalizada de animais exibida.
+
+---
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](https://github.com/user-attachments/assets/abc7591a-b46f-4ea2-b8f0-c116b60eb24e)
-
 
 ### 3.4.4 Descrições das Classes 
 
 | # | Nome | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+|---|------|----------|
+| 1 | Usuário | Armazena informações gerais dos usuários do sistema (login, senha, tipo de usuário). |
+| 2 | Adotante | Representa usuários interessados em adotar animais, incluindo preferências e histórico. |
+| 3 | ONG | Representa organizações responsáveis pelo cadastro de animais e eventos. |
+| 4 | Animal | Contém dados dos animais disponíveis para adoção (espécie, idade, porte, descrição, status). |
+| 5 | Evento | Representa eventos de adoção organizados pelas ONGs. |
+| 6 | Voluntário | Armazena dados de usuários que desejam apoiar ONGs. |
+| 7 | Notificação | Responsável pelo envio de alertas sobre animais e eventos. |
+| 8 | Feedback | Registra avaliações e comentários dos usuários sobre adoções e experiências. |
+| 9 | Parceria | Gerencia benefícios e parcerias com empresas do ramo pet. |
