@@ -98,7 +98,6 @@ O PetMatch não contempla:
 **Sumário:** A ONG realiza a gestão (inclusão, remoção, alteração e consulta) dos dados dos animais disponíveis para adoção.
 
 **Ator Primário:** ONG  
-**Ator Secundário:** Administrador  
 
 **Pré-condições:**  
 A ONG deve estar cadastrada e autenticada no sistema.
@@ -112,7 +111,7 @@ A ONG deve estar cadastrada e autenticada no sistema.
 
 ---
 
-**Fluxo Alternativo (3): Inclusão**
+**Fluxo Alternativo (1): Inclusão**
 
 a) A ONG solicita a inclusão de um novo animal.  
 b) O Sistema apresenta um formulário para cadastro do animal (nome, espécie, idade, porte, descrição, fotos, status de saúde, localização).  
@@ -122,7 +121,7 @@ e) Se válidas, o animal é cadastrado; caso contrário, o sistema solicita corr
 
 ---
 
-**Fluxo Alternativo (3): Remoção**
+**Fluxo Alternativo (2): Remoção**
 
 a) A ONG seleciona um animal e solicita sua remoção.  
 b) O Sistema verifica se o animal pode ser removido.  
@@ -138,7 +137,7 @@ c) Se válidas, atualiza os dados; caso contrário, informa o erro.
 
 ---
 
-**Fluxo Alternativo (3): Consulta**
+**Fluxo Alternativo (4): Consulta**
 
 a) A ONG solicita a listagem ou busca de animais.  
 b) O Sistema exibe os resultados.  
