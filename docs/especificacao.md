@@ -90,7 +90,36 @@ O PetMatch não contempla:
 ### 3.4.1 Diagrama de Casos de Uso
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
- 
+```mermaid
+---
+config:
+  layout: fixed
+---
+
+flowchart LR
+ subgraph Sistema["Sistema PetMatch"]
+    direction TB
+        UC1["Gerenciar Usuários"]
+        UC2["Gerenciar Animais"]
+        UC6["Gerenciar Voluntários"]
+        UC7["Gerenciar Eventos"]
+        UC12["Gerenciar Anúncios"]
+        UC13["Gerenciar Parcerias"]
+        UC_BUSCA["Buscar Animais"]
+        UC3["Filtrar Preferências"]
+        UC4["Filtrar Geolocalização"]
+        UC5["Receber Recomendações"]
+        UC8["Consultar Termos"]
+        UC9["Postar Fotos"]
+        UC10["Notificações"]
+        UC11["Feedback"]
+  end
+    UC_BUSCA -. include .-> UC3 & UC4
+    Administrador["Administrador"] --> UC1 & UC12 & UC13
+    ONG["ONG"] --> UC2 & UC6 & UC7
+    Adotante["Adotante"] --> UC5 & UC8 & UC10 & UC_BUSCA & UC9 & UC11
+    Voluntario["Voluntário"] --> UC6 & UC7 & UC10
+ ```
 ### 3.4.2 Descrições de Casos de Uso
 
 #### Gerenciar Animais (CSU01)
@@ -195,7 +224,92 @@ Lista personalizada de animais exibida.
 
 
 #### Figura 2: Diagrama de Classes do Sistema.
- 
+
+ ```mermaid
+classDiagram
+
+class Usuario {
+    +id: int
+    +login: string
+    +email: string
+    +senha: string
+    +tipoUsuario: string
+}
+
+class Adotante {
+    +preferencias: string
+    +historico: string
+    +localizacao: string
+}
+
+class ONG {
+    +nome: string
+    +cnpj: string
+    +telefone: string
+    +endereco: string
+    +descricao: string
+}
+
+class Voluntario {
+    +telefone: string
+    +disponibilidade: string
+    +habilidades: string
+}
+
+class Animal {
+    +id: int
+    +nome: string
+    +especie: string
+    +idade: int
+    +porte: string
+    +descricao: string
+    +status: string
+    +localizacao: string
+}
+
+class Evento {
+    +id: int
+    +nome: string
+    +descricao: string
+    +data: datetime
+    +local: string
+}
+
+class Notificacao {
+    +id: int
+    +mensagem: string
+    +dataEnvio: datetime
+    +lida: boolean
+}
+
+class Feedback {
+    +id: int
+    +comentario: string
+    +avaliacao: int
+    +data: datetime
+}
+
+class Parceria {
+    +id: int
+    +nome: string
+    +descricao: string
+    +beneficio: string
+}
+
+Usuario <|-- Adotante
+Usuario <|-- ONG
+Usuario <|-- Voluntario
+
+ONG "1" --> "*" Animal : gerencia
+ONG "1" --> "*" Evento : organiza
+
+Animal "1" --> "*" Feedback : possui
+Adotante "1" --> "*" Feedback : realiza
+
+Adotante "1" --> "*" Notificacao : recebe
+
+ONG "1" --> "*" Parceria : possui
+```
 
 ### 3.4.4 Descrições das Classes 
 
