@@ -6,7 +6,7 @@ Descrever e especificar as necessidades dos usuários do sistema PetMatch, inclu
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado **PetMatch**.  
+O produto será denominado **PetMatch**.
 
 O sistema será composto pelos seguintes módulos principais:
 - Módulo de gerenciamento de usuários (adotantes, ONGs e voluntários);
@@ -124,6 +124,23 @@ flowchart LR
 
 #### Gerenciar Animais (CSU01)
 
+##### Figura 3: Diagrama de Caso de Uso – Gerenciar Animais.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC1["Gerenciar Animais"]
+        UC1a["Incluir Animal"]
+        UC1b["Alterar Animal"]
+        UC1c["Excluir Animal"]
+        UC1d["Consultar Animal"]
+        UC1 -. include .-> UC1a
+        UC1 -. include .-> UC1b
+        UC1 -. include .-> UC1c
+        UC1 -. include .-> UC1d
+    end
+    ONG["ONG"] --> UC1
+```
+
 **Sumário:** A ONG realiza a gestão (inclusão, remoção, alteração e consulta) dos dados dos animais disponíveis para adoção.
 
 **Ator Primário:** ONG  
@@ -181,6 +198,19 @@ Um animal foi cadastrado, alterado, removido ou consultado.
 
 ### Buscar e Filtrar Animais (CSU02)
 
+##### Figura 4: Diagrama de Caso de Uso – Buscar e Filtrar Animais.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC2["Buscar Animais"]
+        UC3["Filtrar por Preferências"]
+        UC4["Filtrar por Geolocalização"]
+        UC2 -. include .-> UC3
+        UC2 -. include .-> UC4
+    end
+    Adotante["Adotante"] --> UC2
+```
+
 **Sumário:** O adotante busca e filtra animais disponíveis para adoção com base em suas preferências.
 
 **Ator Primário:** Adotante
@@ -212,6 +242,17 @@ Lista de animais filtrada e exibida ao usuário.
 
 ### Recomendar Animais (CSU03)
 
+##### Figura 5: Diagrama de Caso de Uso – Recomendar Animais.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC5["Recomendar Animais"]
+        UC5_EXT["Completar Perfil"]
+        UC5 -. extend .-> UC5_EXT
+    end
+    Adotante["Adotante"] --> UC5
+```
+
 **Sumário:** O sistema recomenda animais ao adotante com base em seu perfil e histórico de navegação.
 
 **Ator Primário:** Adotante
@@ -242,6 +283,23 @@ Lista personalizada de animais exibida ao usuário.
 ---
 
 ### Gerenciar Eventos de Adoção (CSU04)
+
+##### Figura 6: Diagrama de Caso de Uso – Gerenciar Eventos de Adoção.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC7["Gerenciar Eventos de Adoção"]
+        UC7a["Incluir Evento"]
+        UC7b["Alterar Evento"]
+        UC7c["Excluir Evento"]
+        UC7d["Consultar Evento"]
+        UC7 -. include .-> UC7a
+        UC7 -. include .-> UC7b
+        UC7 -. include .-> UC7c
+        UC7 -. include .-> UC7d
+    end
+    ONG["ONG"] --> UC7
+```
 
 **Sumário:** A ONG realiza a gestão de eventos de adoção.
 
@@ -298,6 +356,21 @@ Evento cadastrado, atualizado, removido ou consultado.
 
 ### Gerenciar Voluntários (CSU05)
 
+##### Figura 7: Diagrama de Caso de Uso – Gerenciar Voluntários.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC6["Gerenciar Voluntários"]
+        UC6a["Aprovar Voluntário"]
+        UC6b["Rejeitar Voluntário"]
+        UC6c["Consultar Voluntários"]
+        UC6 -. include .-> UC6a
+        UC6 -. include .-> UC6b
+        UC6 -. include .-> UC6c
+    end
+    ONG["ONG"] --> UC6
+```
+
 **Sumário:** A ONG gerencia voluntários interessados em colaborar.
 
 **Ator Primário:** ONG
@@ -336,6 +409,15 @@ Voluntário aprovado, rejeitado ou consultado.
 
 ### Enviar Feedback (CSU06)
 
+##### Figura 8: Diagrama de Caso de Uso – Enviar Feedback.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC11["Enviar Feedback"]
+    end
+    Adotante["Adotante"] --> UC11
+```
+
 **Sumário:** O adotante registra sua experiência após o processo de adoção.
 
 **Ator Primário:** Adotante
@@ -359,6 +441,17 @@ Feedback registrado no sistema.
 
 ### Receber Notificações (CSU07)
 
+##### Figura 9: Diagrama de Caso de Uso – Receber Notificações.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC10["Receber Notificações"]
+    end
+    Adotante["Adotante"] --> UC10
+    Voluntario["Voluntário"] --> UC10
+    ONG["ONG"] --> UC10
+```
+
 **Sumário:** O sistema envia notificações ao usuário sobre novos animais e eventos.
 
 **Ator Primário:** Sistema  
@@ -381,6 +474,26 @@ Usuário informado sobre atualizações relevantes.
 ---
 
 ### Gerenciar Usuários (CSU08)
+
+##### Figura 10: Diagrama de Caso de Uso – Gerenciar Usuários.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC8g["Gerenciar Usuários"]
+        UC8a["Cadastrar Usuário"]
+        UC8b["Atualizar Usuário"]
+        UC8c["Excluir Usuário"]
+        UC8d["Consultar Usuário"]
+        UC8e["Tornar-se Voluntário"]
+        UC8g -. include .-> UC8a
+        UC8g -. include .-> UC8b
+        UC8g -. include .-> UC8c
+        UC8g -. include .-> UC8d
+        UC8g -. extend .-> UC8e
+    end
+    Usuario["Usuário"] --> UC8g
+    Administrador["Administrador"] --> UC8g
+```
 
 **Sumário:** O sistema permite o gerenciamento de usuários, incluindo cadastro, atualização, remoção e definição de perfil (adotante, voluntário ou ONG).
 
@@ -439,6 +552,17 @@ Usuário cadastrado, atualizado, removido ou com perfil de voluntário definido.
 
 ### Consultar Termos de Uso (CSU09)
 
+##### Figura 11: Diagrama de Caso de Uso – Consultar Termos de Uso.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC8["Consultar Termos de Uso"]
+        UC8_EXT["Aceitar Termos"]
+        UC8 -. extend .-> UC8_EXT
+    end
+    Usuario["Usuário"] --> UC8
+```
+
 **Sumário:** O usuário consulta os termos de uso da plataforma.
 
 **Ator Primário:** Usuário
@@ -468,6 +592,23 @@ Termos visualizados e, quando aplicável, aceitos pelo usuário.
 ---
 
 ### Gerenciar Anúncios (CSU10)
+
+##### Figura 12: Diagrama de Caso de Uso – Gerenciar Anúncios.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC12["Gerenciar Anúncios"]
+        UC12a["Incluir Anúncio"]
+        UC12b["Alterar Anúncio"]
+        UC12c["Excluir Anúncio"]
+        UC12d["Consultar Anúncio"]
+        UC12 -. include .-> UC12a
+        UC12 -. include .-> UC12b
+        UC12 -. include .-> UC12c
+        UC12 -. include .-> UC12d
+    end
+    Administrador["Administrador"] --> UC12
+```
 
 **Sumário:** O administrador gerencia anúncios exibidos na plataforma.
 
@@ -521,6 +662,23 @@ Anúncio cadastrado, atualizado, removido ou consultado.
 ---
 
 ### Gerenciar Parcerias e Benefícios (CSU11)
+
+##### Figura 13: Diagrama de Caso de Uso – Gerenciar Parcerias e Benefícios.
+```mermaid
+flowchart LR
+    subgraph Sistema["Sistema PetMatch"]
+        UC13["Gerenciar Parcerias e Benefícios"]
+        UC13a["Incluir Parceria"]
+        UC13b["Alterar Parceria"]
+        UC13c["Excluir Parceria"]
+        UC13d["Consultar Parceria"]
+        UC13 -. include .-> UC13a
+        UC13 -. include .-> UC13b
+        UC13 -. include .-> UC13c
+        UC13 -. include .-> UC13d
+    end
+    Administrador["Administrador"] --> UC13
+```
 
 **Sumário:** O administrador gerencia parcerias com empresas e benefícios oferecidos aos usuários.
 
@@ -576,9 +734,9 @@ Parceria ou benefício cadastrado, atualizado, removido ou consultado.
 ### 3.4.3 Diagrama de Classes 
 
 
-#### Figura 2: Diagrama de Classes do Sistema.
+#### Figura 14: Diagrama de Classes do Sistema.
 
- ```mermaid
+```mermaid
 classDiagram
 
 class Usuario {
@@ -607,6 +765,10 @@ class Voluntario {
     +telefone: string
     +disponibilidade: string
     +habilidades: string
+}
+
+class Administrador {
+    +nivelAcesso: string
 }
 
 class Animal {
@@ -647,11 +809,28 @@ class Parceria {
     +nome: string
     +descricao: string
     +beneficio: string
+    +validade: datetime
+}
+
+class Anuncio {
+    +id: int
+    +imagem: string
+    +texto: string
+    +link: string
+    +periodoExibicao: datetime
+}
+
+class Foto {
+    +id: int
+    +imagem: string
+    +legenda: string
+    +dataPublicacao: datetime
 }
 
 Usuario <|-- Adotante
 Usuario <|-- ONG
 Usuario <|-- Voluntario
+Usuario <|-- Administrador
 
 ONG "1" --> "*" Animal : gerencia
 ONG "1" --> "*" Evento : organiza
@@ -660,8 +839,15 @@ Animal "1" --> "*" Feedback : possui
 Adotante "1" --> "*" Feedback : realiza
 
 Adotante "1" --> "*" Notificacao : recebe
+ONG "1" --> "*" Notificacao : recebe
+Voluntario "1" --> "*" Notificacao : recebe
 
-ONG "1" --> "*" Parceria : possui
+Voluntario "*" --> "*" Evento : participa
+
+Administrador "1" --> "*" Parceria : gerencia
+Administrador "1" --> "*" Anuncio : gerencia
+
+Adotante "1" --> "*" Foto : publica
 ```
 
 ### 3.4.4 Descrições das Classes 
