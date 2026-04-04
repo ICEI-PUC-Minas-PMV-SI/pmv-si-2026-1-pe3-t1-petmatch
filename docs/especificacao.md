@@ -179,44 +179,397 @@ Um animal foi cadastrado, alterado, removido ou consultado.
 
 ---
 
-#### Buscar e Filtrar Animais (CSU02)
+### Buscar e Filtrar Animais (CSU02)
 
-**Sumário:** O Adotante busca e filtra animais disponíveis para adoção.
+**Sumário:** O adotante busca e filtra animais disponíveis para adoção com base em suas preferências.
 
-**Ator Primário:** Adotante  
+**Ator Primário:** Adotante
 
 **Pré-condições:**  
-O usuário deve estar autenticado no sistema.
+O usuário deve estar cadastrado e autenticado no sistema.
 
 **Fluxo Principal:**
 
-1) O usuário acessa a funcionalidade de busca.  
-2) O Sistema apresenta opções de filtro (espécie, porte, idade, localização, comportamento).  
-3) O usuário define os critérios desejados.  
-4) O Sistema exibe os animais compatíveis.
-
-**Pós-condições:**  
-Lista de animais filtrados exibida ao usuário.
+1) O adotante acessa a funcionalidade de busca de animais.  
+2) O Sistema apresenta a lista de animais disponíveis.  
+3) O adotante pode optar por visualizar os resultados ou aplicar filtros.  
+4) O Sistema atualiza a lista conforme as interações do usuário.
 
 ---
 
-#### Recomendar Animais (CSU03)
+**Fluxo Alternativo (1): Aplicar Filtros**
 
-**Sumário:** O Sistema recomenda animais com base no perfil do usuário.
+a) O adotante seleciona critérios de filtragem (espécie, porte, idade, localização, comportamento).  
+b) O Sistema processa os critérios informados.  
+c) O Sistema exibe apenas os animais compatíveis com os filtros.
 
-**Ator Primário:** Adotante  
+---
+
+**Pós-condições:**  
+Lista de animais filtrada e exibida ao usuário.
+
+---
+
+### Recomendar Animais (CSU03)
+
+**Sumário:** O sistema recomenda animais ao adotante com base em seu perfil e histórico de navegação.
+
+**Ator Primário:** Adotante
 
 **Pré-condições:**  
-O usuário deve ter preenchido informações de perfil ou histórico.
+O usuário deve estar autenticado e possuir dados de perfil ou histórico no sistema.
 
 **Fluxo Principal:**
 
-1) O usuário acessa recomendações.  
-2) O Sistema analisa preferências e histórico.  
-3) O Sistema exibe sugestões de animais compatíveis.
+1) O adotante acessa a área de recomendações.  
+2) O Sistema analisa o perfil e histórico do usuário.  
+3) O Sistema gera uma lista de animais recomendados.  
+4) O adotante visualiza os animais sugeridos.
+
+---
+
+**Fluxo Alternativo (1): Perfil Incompleto**
+
+a) O Sistema identifica que o perfil do usuário está incompleto.  
+b) O Sistema solicita o preenchimento de preferências.  
+c) Após preenchimento, o fluxo retorna ao passo 2.
+
+---
 
 **Pós-condições:**  
-Lista personalizada de animais exibida.
+Lista personalizada de animais exibida ao usuário.
+
+---
+
+### Gerenciar Eventos de Adoção (CSU04)
+
+**Sumário:** A ONG realiza a gestão de eventos de adoção.
+
+**Ator Primário:** ONG
+
+**Pré-condições:**  
+A ONG deve estar cadastrada e autenticada no sistema.
+
+**Fluxo Principal:**
+
+1) A ONG acessa a funcionalidade de eventos.  
+2) O Sistema apresenta as operações disponíveis: inclusão, alteração, exclusão e consulta de eventos.  
+3) A ONG seleciona a operação desejada.  
+4) O fluxo retorna ao passo 2 ou é encerrado.
+
+---
+
+**Fluxo Alternativo (1): Inclusão**
+
+a) A ONG solicita a criação de um evento.  
+b) O Sistema apresenta formulário (data, local, descrição, horário).  
+c) A ONG preenche os dados.  
+d) O Sistema valida e salva o evento.
+
+---
+
+**Fluxo Alternativo (2): Alteração**
+
+a) A ONG seleciona um evento. 
+b) A ONG altera os dados de um evento.  
+c) O Sistema valida e atualiza as informações.
+
+---
+
+**Fluxo Alternativo (3): Remoção**
+
+a) A ONG seleciona um evento.
+b) A ONG solicita a exclusão de um evento.  
+c) O Sistema realiza a exclusão, se permitido.
+
+---
+
+**Fluxo Alternativo (4): Consulta**
+
+a) A ONG solicita a listagem de eventos.  
+b) O Sistema exibe os eventos cadastrados.
+
+---
+
+**Pós-condições:**  
+Evento cadastrado, atualizado, removido ou consultado.
+
+---
+
+### Gerenciar Voluntários (CSU05)
+
+**Sumário:** A ONG gerencia voluntários interessados em colaborar.
+
+**Ator Primário:** ONG
+
+**Pré-condições:**  
+A ONG deve estar autenticada no sistema.
+
+**Fluxo Principal:**
+
+1) A ONG acessa a área de voluntários.  
+2) O Sistema apresenta a lista de voluntários cadastrados.  
+3) A ONG seleciona um voluntário para visualizar detalhes ou realizar ações.
+
+---
+
+**Fluxo Alternativo (1): Aprovar Voluntário**
+
+a) A ONG seleciona um voluntário.  
+b) A ONG aprova sua participação.  
+c) O Sistema atualiza o status do voluntário.
+
+---
+
+**Fluxo Alternativo (2): Rejeitar Voluntário**
+
+a) A ONG seleciona um voluntário.  
+b) A ONG rejeita a solicitação.  
+c) O Sistema registra a decisão.
+
+---
+
+**Pós-condições:**  
+Voluntário aprovado, rejeitado ou consultado.
+
+---
+
+### Enviar Feedback (CSU06)
+
+**Sumário:** O adotante registra sua experiência após o processo de adoção.
+
+**Ator Primário:** Adotante
+
+**Pré-condições:**  
+O usuário deve estar autenticado e ter participado de uma adoção.
+
+**Fluxo Principal:**
+
+1) O adotante acessa a área de feedback.  
+2) O Sistema apresenta formulário de avaliação.  
+3) O adotante preenche comentários e nota.  
+4) O Sistema valida e registra o feedback.
+
+---
+
+**Pós-condições:**  
+Feedback registrado no sistema.
+
+---
+
+### Receber Notificações (CSU07)
+
+**Sumário:** O sistema envia notificações ao usuário sobre novos animais e eventos.
+
+**Ator Primário:** Sistema  
+**Ator Secundário:** Usuário (Adotante/Voluntário/ONG)
+
+**Pré-condições:**  
+O usuário deve estar cadastrado e com notificações ativas.
+
+**Fluxo Principal:**
+
+1) O Sistema identifica um evento relevante (novo animal ou evento).  
+2) O Sistema envia notificação ao usuário.  
+3) O usuário visualiza a notificação.
+
+---
+
+**Pós-condições:**  
+Usuário informado sobre atualizações relevantes.
+
+---
+
+### Gerenciar Usuários (CSU08)
+
+**Sumário:** O sistema permite o gerenciamento de usuários, incluindo cadastro, atualização, remoção e definição de perfil (adotante, voluntário ou ONG).
+
+**Ator Primário:** Usuário (Adotante/Voluntário/ONG)  
+**Ator Secundário:** Administrador
+
+**Pré-condições:**  
+O usuário deve estar autenticado no sistema (exceto para cadastro).
+
+**Fluxo Principal:**
+
+1) O usuário acessa a área de gerenciamento de conta.  
+2) O Sistema apresenta as opções: cadastro, atualização, exclusão e consulta de dados.  
+3) O usuário seleciona a operação desejada.  
+4) O Sistema executa a operação e retorna ao menu principal.
+
+---
+
+**Fluxo Alternativo (1): Cadastro**
+
+a) O usuário solicita a criação de conta.  
+b) O Sistema apresenta formulário de cadastro.  
+c) O usuário preenche os dados (nome, email, senha, tipo de usuário).  
+d) O Sistema valida e cria a conta.
+
+---
+
+**Fluxo Alternativo (2): Tornar-se Voluntário**
+
+a) O usuário acessa a opção de voluntariado.  
+b) O Sistema apresenta formulário de habilidades e disponibilidade.  
+c) O usuário preenche os dados.  
+d) O Sistema atualiza o perfil para incluir o status de voluntário.
+
+---
+
+**Fluxo Alternativo (3): Atualização**
+
+a) O usuário altera seus dados cadastrais.  
+b) O Sistema valida e atualiza as informações.
+
+---
+
+**Fluxo Alternativo (4): Remoção**
+
+a) O usuário solicita exclusão da conta.  
+b) O Sistema confirma a ação.  
+c) O Sistema remove o cadastro.
+
+---
+
+**Pós-condições:**  
+Usuário cadastrado, atualizado, removido ou com perfil de voluntário definido.
+
+---
+
+### Consultar Termos de Uso (CSU09)
+
+**Sumário:** O usuário consulta os termos de uso da plataforma.
+
+**Ator Primário:** Usuário
+
+**Pré-condições:**  
+Nenhuma.
+
+**Fluxo Principal:**
+
+1) O usuário acessa a opção “Termos de Uso”.  
+2) O Sistema apresenta o conteúdo dos termos.  
+3) O usuário realiza a leitura.
+
+---
+
+**Fluxo Alternativo (1): Aceite dos Termos**
+
+a) O Sistema solicita o aceite dos termos (em cadastro ou primeiro acesso).  
+b) O usuário aceita os termos.  
+c) O Sistema registra o aceite.
+
+---
+
+**Pós-condições:**  
+Termos visualizados e, quando aplicável, aceitos pelo usuário.
+
+---
+
+### Gerenciar Anúncios (CSU10)
+
+**Sumário:** O administrador gerencia anúncios exibidos na plataforma.
+
+**Ator Primário:** Administrador
+
+**Pré-condições:**  
+O administrador deve estar autenticado no sistema.
+
+**Fluxo Principal:**
+
+1) O administrador acessa a área de anúncios.  
+2) O Sistema apresenta as opções: inclusão, alteração, exclusão e consulta.  
+3) O administrador seleciona a operação desejada.  
+4) O Sistema executa a operação.
+
+---
+
+**Fluxo Alternativo (1): Inclusão**
+
+a) O administrador solicita a criação de um anúncio.  
+b) O Sistema apresenta formulário (imagem, texto, link, período de exibição).  
+c) O administrador preenche os dados.  
+d) O Sistema valida e publica o anúncio.
+
+---
+
+**Fluxo Alternativo (2): Alteração**
+
+a) O administrador altera dados de um anúncio.  
+b) O Sistema valida e atualiza.
+
+---
+
+**Fluxo Alternativo (3): Remoção**
+
+a) O administrador solicita exclusão de um anúncio.  
+b) O Sistema remove o anúncio.
+
+---
+
+**Fluxo Alternativo (4): Consulta**
+
+a) O administrador solicita listagem de anúncios.  
+b) O Sistema exibe os registros.
+
+---
+
+**Pós-condições:**  
+Anúncio cadastrado, atualizado, removido ou consultado.
+
+---
+
+### Gerenciar Parcerias e Benefícios (CSU11)
+
+**Sumário:** O administrador gerencia parcerias com empresas e benefícios oferecidos aos usuários.
+
+**Ator Primário:** Administrador
+
+**Pré-condições:**  
+O administrador deve estar autenticado.
+
+**Fluxo Principal:**
+
+1) O administrador acessa a área de parcerias.  
+2) O Sistema apresenta as opções: inclusão, alteração, exclusão e consulta.  
+3) O administrador seleciona a operação desejada.  
+4) O Sistema executa a operação.
+
+---
+
+**Fluxo Alternativo (1): Inclusão**
+
+a) O administrador cadastra uma nova parceria.  
+b) O Sistema solicita dados (nome da empresa, tipo de benefício, descrição, validade).  
+c) O administrador preenche as informações.  
+d) O Sistema valida e salva.
+
+---
+
+**Fluxo Alternativo (2): Alteração**
+
+a) O administrador altera dados da parceria.  
+b) O Sistema valida e atualiza.
+
+---
+
+**Fluxo Alternativo (3): Remoção**
+
+a) O administrador solicita exclusão.  
+b) O Sistema remove a parceria.
+
+---
+
+**Fluxo Alternativo (4): Consulta**
+
+a) O administrador solicita listagem.  
+b) O Sistema exibe as parcerias cadastradas.
+
+---
+
+**Pós-condições:**  
+Parceria ou benefício cadastrado, atualizado, removido ou consultado.
 
 ---
 
