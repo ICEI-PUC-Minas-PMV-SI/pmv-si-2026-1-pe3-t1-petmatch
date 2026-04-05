@@ -733,6 +733,7 @@ Parceria ou benefício cadastrado, atualizado, removido ou consultado.
 
 ### 3.4.3 Diagrama de Classes 
 
+O diagrama de classes apresentado na Figura 14 representa a estrutura estática do sistema PetMatch, evidenciando as principais entidades envolvidas e seus relacionamentos. A classe Usuário atua como superclasse, sendo especializada em diferentes perfis: Adotante, ONG, Voluntário e Administrador, cada um com atributos específicos conforme seu papel na plataforma. As ONGs são responsáveis pelo gerenciamento dos Animais disponíveis para adoção e pela organização de Eventos, enquanto os adotantes podem interagir com o sistema por meio do envio de Feedbacks, publicação de Fotos e recebimento de Notificações. Os voluntários, por sua vez, podem participar de eventos promovidos pelas ONGs. O sistema também contempla funcionalidades administrativas, como o gerenciamento de Parcerias e Anúncios, realizadas pelo Administrador. Dessa forma, o diagrama demonstra de forma clara a organização das classes e as interações entre os diferentes atores e funcionalidades do sistema, refletindo os requisitos definidos para a plataforma.
 
 #### Figura 14: Diagrama de Classes do Sistema.
 
