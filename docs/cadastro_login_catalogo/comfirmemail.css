@@ -1,0 +1,140 @@
+/* ============================================================
+   CONFIRMAR E-MAIL — comfirmemail.css
+   Depende de: global.css
+   ============================================================ */
+
+main {
+  display: flex;
+  min-height: calc(100vh - var(--header-h));
+}
+
+/* Painel esquerdo — formulário */
+.left {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  background-color: var(--color-bg);
+}
+
+/* Painel direito — imagem */
+.right {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+/* ---------- CARD ---------- */
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card {
+  background-color: var(--color-white);
+  padding: 48px 40px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeInUp 0.4s ease;
+}
+
+.logo-form {
+  height: 64px;
+  align-self: center;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-card h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  color: var(--color-brown-dark);
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-container .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-brown-mid);
+  margin: 0;
+}
+
+.form-card input {
+  padding: 11px 14px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  background-color: var(--color-bg);
+  color: var(--color-brown-dark);
+  width: 100%;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-card input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(84,160,154,0.15);
+}
+
+/* ---------- AÇÕES ---------- */
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.acoes a {
+  font-size: 13px;
+  color: var(--color-brown-mid);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.acoes a:hover { color: var(--color-primary); }
+
+.acoes button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  padding: 10px 28px;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.acoes button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 768px) {
+  main { flex-direction: column; }
+  .right { display: none; }
+  .left { flex: 1; padding: 32px 20px; }
+  .form-card { padding: 36px 24px; }
+}

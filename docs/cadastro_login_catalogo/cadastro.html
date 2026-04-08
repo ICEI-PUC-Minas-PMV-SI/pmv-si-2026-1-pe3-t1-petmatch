@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crie sua conta no PetMatch e comece a adotar ou ajudar animais hoje mesmo."/>
+  <title>Cadastro — PetMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body class="auth-body">
+
+  <!-- Decoração lateral -->
+  <div class="auth-side" aria-hidden="true">
+    <img src="imagemdefundo.jpg" alt="" />
+    <div class="auth-side-overlay"></div>
+    <div class="auth-side-content">
+      <h2>Bem-vindo à família PetMatch!</h2>
+      <p>Crie sua conta e encontre o companheiro perfeito para sua vida.</p>
+    </div>
+  </div>
+
+  <!-- Formulário -->
+  <div class="auth-main-wide">
+    <div class="cadastro-card fade-in">
+      <a href="../home/home.html" style="display:block;text-align:center;margin-bottom:24px;">
+        <img src="LOGO 4.png" alt="PetMatch" style="height:56px;" />
+      </a>
+
+      <h1>Crie sua conta</h1>
+      <p class="sub">Já tem conta? <a href="login.html" style="color:var(--color-primary);font-weight:700;">Entrar →</a></p>
+
+      <form class="formulario cadastro-grid" novalidate>
+
+        <label class="full">
+          Nome completo *
+          <input type="text" placeholder="Seu nome" autocomplete="name" required />
+        </label>
+
+        <label>
+          Telefone *
+          <input type="tel" placeholder="(11) 99999-9999" autocomplete="tel" required />
+        </label>
+
+        <label>
+          E-mail *
+          <input type="email" placeholder="seu@email.com" autocomplete="email" required />
+        </label>
+
+        <label>
+          Senha *
+          <div class="input-pw">
+            <input type="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password" required />
+            <button type="button" class="toggle-pw" aria-label="Mostrar senha" tabindex="-1"
+                    onclick="togglePw(this)">👁️</button>
+          </div>
+        </label>
+
+        <label>
+          Confirmar senha *
+          <div class="input-pw">
+            <input type="password" placeholder="Repita a senha" autocomplete="new-password" required />
+            <button type="button" class="toggle-pw" aria-label="Mostrar senha" tabindex="-1"
+                    onclick="togglePw(this)">👁️</button>
+          </div>
+        </label>
+
+        <label>
+          Idade *
+          <input type="number" placeholder="Ex: 25" min="1" max="120" required />
+        </label>
+
+        <label class="full" style="cursor:pointer;">
+          Foto de perfil (opcional)
+          <input type="file" accept="image/*" style="margin-top:6px;" />
+        </label>
+
+        <div class="cadastro-actions">
+          <a href="../home/home.html" class="voltar-link">← Voltar para home</a>
+          <button type="submit" class="btn-primary">Criar conta</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="../toast.js"></script>
+  <script src="scripit.js"></script>
+  <script src="../active-menu.js"></script>
+  <script>
+    function togglePw(btn) {
+      const inp = btn.previousElementSibling;
+      const isText = inp.type === 'text';
+      inp.type = isText ? 'password' : 'text';
+      btn.textContent = isText ? '👁️' : '🙈';
+      btn.setAttribute('aria-label', isText ? 'Mostrar senha' : 'Ocultar senha');
+    }
+  </script>
+
+</body>
+</html>
