@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog PetMatch — dicas, histórias e novidades sobre adoção animal.">
+  <title>Blog — PetMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../home/home.html">
+          <img src="../cadastro_login_catalogo/LOGO 3 1.png" alt="PetMatch" />
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="../cadastro_login_catalogo/catalogo.html">Quero adotar</a>
+          <div class="dropdown">
+            <a href="#" class="menu-link">Quero ajudar ▾</a>
+            <div class="dropdown-content">
+              <a href="../cadastroOng/cadastroong.html">🏠 Cadastrar uma ONG</a>
+              <a href="../cadastroVoluntario/cadastrovoluntario.html">🤝 Me voluntariar</a>
+              <a href="../cadastro_login_catalogo/cadastro-pets.html">🐾 Divulgar um animal</a>
+            </div>
+          </div>
+          <a href="blog.html" class="menu-link-active">Blog</a>
+          <a href="../protetores/protetores.html">Protetores</a>
+          <a href="../sobreNos/sobre.html">Sobre</a>
+        </div>
+        <div class="menu-usuario"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero do blog -->
+    <section class="blog-hero">
+      <div class="container">
+        <span class="tag">✍️ Blog PetMatch</span>
+        <h1 class="fade-in">Histórias, dicas e amor</h1>
+        <p class="fade-in-2">Tudo sobre adoção, cuidados com pets e as histórias que nos inspiram.</p>
+      </div>
+    </section>
+
+    <!-- Artigo principal (destaque) -->
+    <section class="section-pad container">
+      <div class="blog-featured reveal">
+        <div class="blog-featured-img">
+          <img src="gatinho blog.jpg" alt="Feira de Adoção em Belo Horizonte" loading="lazy" />
+        </div>
+        <div class="blog-featured-content">
+          <span class="blog-cat">🐱 Eventos</span>
+          <h2>Feira de Adoção reúne centenas de animais em BH</h2>
+          <p class="blog-meta">📅 30 de março de 2025 · 4 min de leitura</p>
+          <p class="blog-excerpt">
+            A Feira de Adoção realizada no Parque Municipal de Belo Horizonte foi um sucesso absoluto.
+            Mais de 200 animais foram apresentados às famílias interessadas, e ao final do evento,
+            86 cachorros e gatos encontraram novos lares. A iniciativa reuniu 12 ONGs parceiras e
+            voluntários de toda a cidade.
+          </p>
+          <a href="#" class="btn-ver-mais" onclick="expandir(event, 'artigo1')">Continuar lendo →</a>
+          <p id="artigo1" class="blog-extra" hidden>
+            O evento, organizado em parceria com a Prefeitura de BH e diversas ONGs locais, contou
+            também com serviços gratuitos de castração, vacinação e microchipagem. A próxima edição
+            está confirmada para junho de 2025. Fique atento ao nosso blog para mais informações!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grade de artigos -->
+    <section class="section-pad blog-grid-section" style="background-color: var(--color-bg-alt);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Mais artigos</span>
+          <h2>Continue lendo</h2>
+        </div>
+        <div class="blog-grid">
+
+          <!-- Card 1 -->
+          <article class="blog-card reveal">
+            <div class="blog-card-img-wrap">
+              <img src="gatinho blog.jpg" alt="5 dicas para adaptar seu pet ao novo lar" loading="lazy" />
+              <span class="blog-card-badge">Dicas</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-cat">🏠 Adaptação</span>
+              <h3>5 dicas para adaptar seu pet ao novo lar</h3>
+              <p class="blog-meta">📅 15 de março de 2025 · 3 min</p>
+              <p>A chegada em casa é emocionante, mas o pet precisa de tempo e paciência para se sentir seguro. Saiba como tornar essa transição mais tranquila.</p>
+              <a href="#" class="read-more" onclick="expandir(event, 'card1')">Ler artigo →</a>
+              <p id="card1" class="blog-extra" hidden>
+                1. Prepare um espaço só dele. 2. Mantenha a rotina. 3. Apresente a casa aos poucos.
+                4. Evite visitas nas primeiras semanas. 5. Consulte um veterinário para acompanhamento.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="blog-card reveal">
+            <div class="blog-card-img-wrap">
+              <img src="gatinho blog.jpg" alt="Voluntariado: como começar a ajudar ONGs" loading="lazy" />
+              <span class="blog-card-badge">Voluntariado</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-cat">🤝 Ajudar</span>
+              <h3>Voluntariado: como começar a ajudar ONGs</h3>
+              <p class="blog-meta">📅 22 de fevereiro de 2025 · 5 min</p>
+              <p>Você não precisa adotar para fazer diferença. Descubra formas práticas de contribuir com ONGs de proteção animal na sua cidade.</p>
+              <a href="#" class="read-more" onclick="expandir(event, 'card2')">Ler artigo →</a>
+              <p id="card2" class="blog-extra" hidden>
+                Comece pelo nosso formulário de voluntariado e conecte-se diretamente com ONGs parceiras.
+                Você pode ajudar com transporte, lar temporário, eventos, redes sociais ou doações.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="blog-card reveal">
+            <div class="blog-card-img-wrap">
+              <img src="gatinho blog.jpg" alt="Saúde preventiva para pets adotados" loading="lazy" />
+              <span class="blog-card-badge">Saúde</span>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-cat">💊 Saúde</span>
+              <h3>Saúde preventiva: o que fazer nos primeiros meses</h3>
+              <p class="blog-meta">📅 10 de fevereiro de 2025 · 4 min</p>
+              <p>Vacinas, vermifugação e consultas de rotina são essenciais para garantir uma vida longa e saudável ao seu novo companheiro.</p>
+              <a href="#" class="read-more" onclick="expandir(event, 'card3')">Ler artigo →</a>
+              <p id="card3" class="blog-extra" hidden>
+                Na primeira semana: leve ao veterinário para avaliação geral. No primeiro mês: inicie o
+                calendário vacinal. Verifique microchipagem e castração. Consulte sobre alimentação adequada para a raça e idade.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA adoção -->
+    <section class="newsletter-section">
+      <h2 class="reveal">Pronto para adotar? 🐾</h2>
+      <p class="reveal">Veja os animais disponíveis e encontre seu match perfeito hoje mesmo.</p>
+      <div class="reveal" style="margin-top:28px;">
+        <a href="../cadastro_login_catalogo/catalogo.html" class="btn-verde">Ver animais disponíveis</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-rich">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="../home/home.html" class="footer-logo"><img src="../cadastro_login_catalogo/LOGO 3 1.png" alt="PetMatch" /></a>
+          <p class="footer-desc">Conectando animais a famílias amorosas desde 2025. Adote, ajude e transforme uma vida.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Adotar</h4>
+          <a href="../cadastro_login_catalogo/catalogo.html">Ver animais disponíveis</a>
+          <a href="../cadastro_login_catalogo/cadastro-pets.html">Divulgar um animal</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ajudar</h4>
+          <a href="../cadastroOng/cadastroong.html">Cadastrar uma ONG</a>
+          <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+          <a href="../protetores/protetores.html">Protetores</a>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <a href="../sobreNos/sobre.html">Sobre o PetMatch</a>
+          <a href="blog.html">Blog</a>
+          <a href="../politicaPrivacidade/politica.html">Política de Privacidade</a>
+          <a href="../cadastro_login_catalogo/login.html">Entrar</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 PetMatch · Feito com ❤️ para os animais do Brasil · Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../toast.js"></script>
+  <script src="../active-menu.js"></script>
+  <script>
+    function expandir(e, id) {
+      e.preventDefault();
+      const el = document.getElementById(id);
+      const link = e.target;
+      const hidden = el.hidden;
+      el.hidden = !hidden;
+      link.textContent = hidden ? 'Fechar ↑' : 'Ler artigo →';
+      if (link.textContent === 'Fechar ↑') {
+        link.textContent = link.closest('.blog-featured-content') ? 'Fechar ↑' : 'Fechar ↑';
+      }
+    }
+  </script>
+
+</body>
+</html>
