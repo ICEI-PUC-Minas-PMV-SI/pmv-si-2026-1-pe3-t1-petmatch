@@ -149,11 +149,120 @@ A tela de cadastro de animal apresenta um formulário extenso organizado em trê
 <img width="1472" height="890" alt="Captura de tela 2026-05-07 183518" src="https://github.com/user-attachments/assets/cd166ea5-1704-404a-b87d-c87c3cfc0445" />
 
 
-## 4.4 Testes com Protótipos
-Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
+# 4.4 Testes com Protótipos
 
-Cada integrante do grupo deverá aplicar o teste com um usuário distinto, preferencialmente alinhado ao perfil das personas criadas. Devem ser definidas previamente as tarefas que o usuário deverá executar no protótipo (por exemplo: realizar um cadastro, buscar um produto, concluir uma compra).
+## 4.4.1 Metodologia
 
-Durante a aplicação do teste, registre observações sobre comportamentos, dúvidas, erros e comentários feitos pelo usuário, bem como o tempo necessário para a execução de cada tarefa. Ao final, colete o feedback do participante, destacando pontos positivos e aspectos a serem melhorados.
+Os testes foram conduzidos individualmente por dois integrantes do grupo, cada um com um usuário distinto, selecionado de acordo com o perfil das personas definidas no projeto. Cada sessão seguiu um roteiro padronizado: apresentação do protótipo de alta fidelidade do PetMatch, execução de tarefas predefinidas e resposta a um questionário de usabilidade ao final.
 
-Os resultados obtidos por todos os integrantes devem ser consolidados, apresentando uma análise geral com os principais problemas encontrados, oportunidades de melhoria e as ações previstas para o projeto final. 
+**Tarefas solicitadas aos participantes:**
+
+| # | Tarefa |
+|---|--------|
+| T1 | Realizar o cadastro como adotante na plataforma |
+| T2 | Buscar um animal filtrando por espécie, porte e localização |
+| T3 | Visualizar o perfil completo de um animal e demonstrar interesse |
+| T4 | Acessar e se inscrever em um evento de adoção |
+
+**Roteiro de perguntas aplicadas após cada sessão:**
+
+1. Ao acessar a página inicial, você entendeu rapidamente o propósito do PetMatch?
+2. O menu e os botões estavam posicionados de forma intuitiva?
+3. Os nomes das seções, botões e links fizeram sentido para você?
+4. Você conseguiu encontrar as informações que procurava com facilidade?
+5. As etapas para realizar as tarefas estavam claras e seguiam uma lógica compreensível?
+6. As cores, ícones e posicionamento dos botões ajudaram a identificar o que era clicável?
+7. Algum elemento visual chamou atenção de forma negativa ou causou confusão?
+8. Os textos e rótulos das páginas ajudaram a entender as ações disponíveis?
+9. Houve algum elemento difícil de visualizar, clicar ou compreender?
+10. Você se sentiu confiante ao navegar no protótipo, sem precisar de ajuda?
+11. O que você mais gostou na interface?
+12. O que você mudaria ou melhoraria?
+
+---
+
+## 4.4.2 Registro dos Testes
+
+---
+
+### Teste 1 — Aplicado por: Matheus Henrique Caitano Faria
+
+**Perfil do participante:** Feminino, 34 anos, professora, já adotou animais anteriormente, uso frequente de redes sociais e aplicativos no celular.
+
+**Tarefas executadas:** T1, T2, T4
+
+| Tarefa | Tempo | Resultado | Observações |
+|--------|-------|-----------|-------------|
+| T1 – Cadastro como adotante | 1min 45s | Concluída | Realizou com fluidez; sugeriu a opção de login com Google |
+| T2 – Busca com filtros | 2min 20s | Concluída | Usou os filtros sem dificuldade depois de localizá-los |
+| T4 – Inscrição em evento | 2min 50s | Concluída com auxílio | Não encontrou "Eventos" no menu de primeira, acabou chegando lá pela busca |
+
+**Respostas ao questionário:**
+
+1. Sim, entendeu imediatamente. Comentou: "Parece um Tinder para pets!"
+2. Sim, porém achou que "Eventos" deveria estar mais visível no menu principal.
+3. Todos os rótulos foram compreendidos sem dificuldade.
+4. Para a maioria das informações, sim. Eventos foi a exceção.
+5. Cadastro e busca seguiram lógica clara. A inscrição no evento tinha um passo a mais que não esperava.
+6. Sim, o padrão de cores é consistente e agradável.
+7. Não identificou elementos confusos, apenas a ausência de "Eventos" em destaque.
+8. Sim, rótulos claros em geral.
+9. Não.
+10. Sim, sentiu-se à vontade na maior parte da navegação.
+11. "A identidade visual com as fotos dos animais é muito fofa e engajante."
+12. "Colocaria 'Eventos' no menu principal e adicionaria login com Google."
+
+---
+
+### Teste 2 — Aplicado por: Pedro Henrique Pereira da Silva
+
+**Perfil do participante:** Masculino, 27 anos, analista de TI, nunca adotou um animal formalmente, tem interesse em adotar um gato.
+
+**Tarefas executadas:** T1, T2, T3
+
+| Tarefa | Tempo | Resultado | Observações |
+|--------|-------|-----------|-------------|
+| T1 – Cadastro como adotante | 2min 10s | Concluída | Hesitou no campo de tipo de usuário — não estava claro que deveria selecionar "Adotante" |
+| T2 – Busca com filtros | 3min 05s | Concluída | Levou um tempo para encontrar o ícone de filtro, que estava pouco destacado na tela |
+| T3 – Visualizar perfil e demonstrar interesse | 1min 30s | Concluída | Executou sem dificuldades, mas achou o botão "Tenho interesse" discreto demais |
+
+**Respostas ao questionário:**
+
+1. Sim, a proposta ficou clara logo na landing page pelo slogan e pelas imagens dos pets.
+2. Parcialmente — o menu principal era intuitivo, mas o acesso aos filtros não estava evidente.
+3. Sim, a maioria dos rótulos era familiar e direto.
+4. A busca foi encontrada rapidamente, mas os filtros exigiram um pouco de exploração.
+5. O fluxo de cadastro seguia uma lógica clara, mas a seleção de perfil de usuário poderia ser mais explícita.
+6. As cores dos botões de ação principal ajudaram bastante na identificação.
+7. O ícone de filtro parecia decorativo, não clicável.
+8. Sim, exceto pelo botão "Tenho interesse", que parecia mais informativo do que interativo.
+9. Em telas menores, o campo de senha tinha contraste um pouco baixo.
+10. Sim, com pequenas hesitações pontuais.
+11. "O design transmite afeto e combina com o propósito da plataforma. As fotos dos animais em destaque funcionam bem."
+12. "Destacaria mais o botão de filtro e deixaria o 'Tenho interesse' mais chamativo."
+
+---
+
+## 4.4.3 Consolidação dos Resultados
+
+### Principais problemas identificados
+
+| # | Problema | Participantes afetados | Severidade |
+|---|----------|------------------------|------------|
+| P1 | "Eventos" não está suficientemente visível no menu de navegação | 1/2 | Média |
+| P2 | Botão de filtro na busca parece decorativo, não interativo | 1/2 | Média |
+| P3 | Seleção de tipo de usuário no cadastro pouco explícita | 1/2 | Média |
+| P4 | Botão "Tenho interesse" não comunica claramente que é clicável | 2/2 | Média |
+| P5 | Baixo contraste em campo de senha em telas menores | 1/2 | Baixa |
+
+### Oportunidades de melhoria
+
+- **Elevar "Eventos" para o menu principal**, com visibilidade equivalente às demais seções.
+- **Redesenhar o botão de filtros** adicionando label junto ao ícone ("Filtrar"), deixando claro que é interativo.
+- **Tornar a seleção de perfil no cadastro mais explícita**, com descrição breve de cada tipo de usuário.
+- **Dar mais destaque ao botão "Tenho interesse"** — tanto visualmente quanto na nomenclatura, considerando algo como "Quero adotar".
+- **Revisar contraste** em campos de formulário para garantir acessibilidade em diferentes dispositivos.
+
+### Considerações finais
+
+De forma geral, os dois participantes compreenderam o propósito do PetMatch logo no primeiro contato e demonstraram boa receptividade à identidade visual da plataforma. Os principais pontos de atrito estão relacionados à navegação para funcionalidades secundárias — especialmente Eventos — e a elementos interativos que não comunicam claramente sua natureza clicável, como o botão de filtros e o "Tenho interesse". Os ajustes identificados são relativamente simples de implementar e têm potencial de melhorar bastante a experiência, especialmente para usuários em primeiro acesso.
