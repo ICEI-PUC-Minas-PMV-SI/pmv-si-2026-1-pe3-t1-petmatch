@@ -3,22 +3,22 @@
 ## 4.1 Personas
 As personas apresentadas a seguir foram desenvolvidas com base nos principais públicos-alvo identificados para a plataforma PetMatch, considerando os objetivos, funcionalidades e problemas abordados pelo projeto. Sua construção foi fundamentada em pesquisas sobre adoção responsável, proteção animal e comportamento dos usuários em plataformas digitais, além da análise das necessidades de adotantes, ONGs e voluntários envolvidos no processo de adoção de animais.
 
-# Mariana Oliveira | Adotante
+### Mariana Oliveira | Adotante
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/8cef370a-c69d-4439-97ff-19fabeaad94c" />
 
-# Carlos Mendes | ONG
+### Carlos Mendes | ONG
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/968cea4d-5592-48de-943c-ea0cca7b43b8" />
 
-# Lucas Ferreira | Voluntário
+### Lucas Ferreira | Voluntário
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/caa996d3-5c0c-451e-b70d-d31b955674b3" />
 
-# Juliana Souza | Tutor que precisa doar
+### Juliana Souza | Tutor que precisa doar
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/1cca8cd8-b8b1-4bb0-bdc3-6f598ac2ddf0" />
 
-# Família Ribeiro | Adotantes
+### Família Ribeiro | Adotantes
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/d99130ef-f950-4a12-922a-440781d67e2d" />
 
-# Rafael Costa | Voluntário
+### Rafael Costa | Voluntário
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/745f0ef8-6d18-45ae-b1f7-b470ff6460a4" />
 
 ## 4.2 Mapa de Empatia
