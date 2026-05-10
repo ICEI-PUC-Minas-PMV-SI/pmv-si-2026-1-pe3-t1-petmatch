@@ -7,19 +7,19 @@ As personas apresentadas a seguir foram desenvolvidas com base nos principais p�
 <img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/8cef370a-c69d-4439-97ff-19fabeaad94c" />
 
 ### Carlos Mendes | ONG
-<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/968cea4d-5592-48de-943c-ea0cca7b43b8" />
+<img width="1200" height="853" alt="image" src="https://github.com/user-attachments/assets/fa5c0725-1f6f-44df-8c69-42852819f094" />
 
 ### Lucas Ferreira | Voluntário
-<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/caa996d3-5c0c-451e-b70d-d31b955674b3" />
+<img width="1202" height="855" alt="image" src="https://github.com/user-attachments/assets/c1d1dddc-e7e4-46e8-9c05-bc25f0822296" />
 
 ### Juliana Souza | Tutor que precisa doar
-<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/1cca8cd8-b8b1-4bb0-bdc3-6f598ac2ddf0" />
+<img width="1201" height="856" alt="image" src="https://github.com/user-attachments/assets/11027745-35ee-48fa-ba9f-3a8e09c0c9d1" />
 
 ### Família Ribeiro | Adotantes
-<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/d99130ef-f950-4a12-922a-440781d67e2d" />
+<img width="1199" height="853" alt="image" src="https://github.com/user-attachments/assets/3ec63f16-b26e-4ba4-90c7-023d5516ab47" />
 
 ### Rafael Costa | Voluntário
-<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/745f0ef8-6d18-45ae-b1f7-b470ff6460a4" />
+<img width="1200" height="855" alt="image" src="https://github.com/user-attachments/assets/622e6f6e-521d-4620-9267-c030975063d3" />
 
 ## 4.2 Mapa de Empatia
 Os mapas de empatia a seguir foram desenvolvidos com base nas personas identificadas para o PetMatch, com o objetivo de aprofundar a compreensão sobre os sentimentos, motivações, dores, comportamentos e expectativas dos diferentes usuários da plataforma. Enquanto as personas apresentam características gerais de cada perfil, os mapas de empatia permitem visualizar de forma mais humana como esses usuários percebem suas experiências, quais inseguranças enfrentam, o que influenciam suas decisões e quais necessidades precisam ser atendidas ao longo da jornada. Dentro do contexto do PetMatch, essa análise foi fundamental para identificar oportunidades de melhoria na experiência do usuário e orientar a definição de funcionalidades que promovam adoções mais responsáveis, processos mais organizados e conexões mais confiáveis entre adotantes, ONGs, voluntários e tutores.
