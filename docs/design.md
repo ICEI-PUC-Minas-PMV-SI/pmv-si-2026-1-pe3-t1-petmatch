@@ -4,7 +4,19 @@
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Para mais informações sobre personas consulte: https://www.rdstation.com/blog/marketing/persona-o-que-e/. Sugere-se a utilização de um template do Canva: https://www.canva.com/pt_br/modelos/s/persona/
 
 ## 4.2 Mapa de Empatia
-Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
+Os mapas de empatia a seguir foram desenvolvidos com base nas personas identificadas para o PetMatch, com o objetivo de aprofundar a compreensão sobre os sentimentos, motivações, dores, comportamentos e expectativas dos diferentes usuários da plataforma. Enquanto as personas apresentam características gerais de cada perfil, os mapas de empatia permitem visualizar de forma mais humana como esses usuários percebem suas experiências, quais inseguranças enfrentam, o que influenciam suas decisões e quais necessidades precisam ser atendidas ao longo da jornada. Dentro do contexto do PetMatch, essa análise foi fundamental para identificar oportunidades de melhoria na experiência do usuário e orientar a definição de funcionalidades que promovam adoções mais responsáveis, processos mais organizados e conexões mais confiáveis entre adotantes, ONGs, voluntários e tutores.
+
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/99cc266d-8c52-40c4-82c6-6bf4c355ccad" />
+
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/65b6cbe3-f988-4d07-9054-e80562c9e3c7" />
+
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/d49668ba-7082-4041-a562-1b14dd096de0" />
+
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/b2fa257f-1444-4d41-b8e4-4790d03d2dbd" />
+
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/0f9895ee-4006-4c24-925e-9e85b7a1209b" />
+
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/9f743c8e-2682-48a2-8c7e-9d2f90313225" />
 
 ## 4.3 Protótipos das Interfaces
  
