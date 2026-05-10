@@ -1,7 +1,25 @@
 # 4. PROJETO DO DESIGN DE INTERAÇÃO
 
 ## 4.1 Personas
-Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Para mais informações sobre personas consulte: https://www.rdstation.com/blog/marketing/persona-o-que-e/. Sugere-se a utilização de um template do Canva: https://www.canva.com/pt_br/modelos/s/persona/
+As personas apresentadas a seguir foram desenvolvidas com base nos principais públicos-alvo identificados para a plataforma PetMatch, considerando os objetivos, funcionalidades e problemas abordados pelo projeto. Sua construção foi fundamentada em pesquisas sobre adoção responsável, proteção animal e comportamento dos usuários em plataformas digitais, além da análise das necessidades de adotantes, ONGs e voluntários envolvidos no processo de adoção de animais.
+
+# Mariana Oliveira | Adotante
+<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/8cef370a-c69d-4439-97ff-19fabeaad94c" />
+
+# Carlos Mendes | ONG
+<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/968cea4d-5592-48de-943c-ea0cca7b43b8" />
+
+# Lucas Ferreira | Voluntário
+<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/caa996d3-5c0c-451e-b70d-d31b955674b3" />
+
+# Juliana Souza | Tutor que precisa doar
+<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/1cca8cd8-b8b1-4bb0-bdc3-6f598ac2ddf0" />
+
+# Família Ribeiro | Adotantes
+<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/d99130ef-f950-4a12-922a-440781d67e2d" />
+
+# Rafael Costa | Voluntário
+<img width="1202" height="859" alt="image" src="https://github.com/user-attachments/assets/745f0ef8-6d18-45ae-b1f7-b470ff6460a4" />
 
 ## 4.2 Mapa de Empatia
 Os mapas de empatia a seguir foram desenvolvidos com base nas personas identificadas para o PetMatch, com o objetivo de aprofundar a compreensão sobre os sentimentos, motivações, dores, comportamentos e expectativas dos diferentes usuários da plataforma. Enquanto as personas apresentam características gerais de cada perfil, os mapas de empatia permitem visualizar de forma mais humana como esses usuários percebem suas experiências, quais inseguranças enfrentam, o que influenciam suas decisões e quais necessidades precisam ser atendidas ao longo da jornada. Dentro do contexto do PetMatch, essa análise foi fundamental para identificar oportunidades de melhoria na experiência do usuário e orientar a definição de funcionalidades que promovam adoções mais responsáveis, processos mais organizados e conexões mais confiáveis entre adotantes, ONGs, voluntários e tutores.
