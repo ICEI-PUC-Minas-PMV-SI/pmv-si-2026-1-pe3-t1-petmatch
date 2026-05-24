@@ -91,41 +91,8 @@ O PetMatch não contempla:
 ### 3.4.1 Diagrama de Casos de Uso
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
-```mermaid
-flowchart LR
- subgraph Sistema["Sistema PetMatch"]
-    direction TB
-        UC0["Fazer Login"]
-        UC0b["Fazer Logout"]
-        UC1["Gerenciar Usuários"]
-        UC1e["Tornar-se Voluntário"]
-        UC2["Gerenciar Animais"]
-        UC6["Gerenciar Voluntários"]
-        UC7["Gerenciar Eventos"]
-        UC12["Gerenciar Anúncios"]
-        UC13["Gerenciar Parcerias"]
-        UC_BUSCA["Buscar Animais"]
-        UC3["Filtrar por Preferências"]
-        UC4["Filtrar por Geolocalização"]
-        UC5["Recomendar Animais"]
-        UC5_EXT["Completar Perfil"]
-        UC8["Consultar Termos de Uso"]
-        UC8_ACC["Aceitar Termos"]
-        UC9["Postar Fotos"]
-        UC10["Receber Notificações"]
-        UC11["Enviar Feedback"]
-  end
-    UC_BUSCA -->|"<<include>>"| UC3
-    UC_BUSCA -->|"<<include>>"| UC4
-    UC5 -.->|"<<extend>>"| UC5_EXT
-    UC1 -.->|"<<extend>>"| UC1e
-    UC8 -.->|"<<extend>>"| UC8_ACC
 
-    Administrador["Administrador"] --> UC0 & UC0b & UC1 & UC12 & UC13
-    ONG["ONG"] --> UC0 & UC0b & UC2 & UC6 & UC7
-    Adotante["Adotante"] --> UC0 & UC0b & UC1 & UC5 & UC8 & UC10 & UC_BUSCA & UC9 & UC11
-    Voluntario["Voluntário"] --> UC0 & UC0b & UC1 & UC6 & UC7 & UC10
-```
+![Diagrama de Casos de Uso do Sistema PetMatch](./img/diagrama-casos-de-uso.png)
 ### 3.4.2 Descrições de Casos de Uso
 
 #### Autenticar Usuário (CSU00)
@@ -406,17 +373,16 @@ Feedback registrado no sistema.
 
 **Sumário:** O sistema envia notificações ao usuário sobre novos animais e eventos.
 
-**Ator Primário:** Sistema  
-**Ator Secundário:** Usuário (Adotante/Voluntário/ONG)
+**Ator Primário:** Usuário (Adotante/Voluntário/ONG)
 
 **Pré-condições:**  
-O usuário deve estar cadastrado e com notificações ativas.
+O usuário deve estar cadastrado e autenticado, com notificações ativas.
 
 **Fluxo Principal:**
 
-1) O Sistema identifica um evento relevante (novo animal ou evento).  
-2) O Sistema envia notificação ao usuário.  
-3) O usuário visualiza a notificação.
+1) Um evento relevante é registrado no sistema (novo animal ou evento de adoção).  
+2) O Sistema gera a notificação correspondente para os usuários elegíveis.  
+3) O usuário acessa a área de notificações e visualiza o conteúdo.
 
 ---
 
