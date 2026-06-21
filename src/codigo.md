@@ -1,3 +1,3 @@
 # 7. Código fonte
 
-Disponibilizar o código fonte da aplicação.
+Codigo disponivel na pasta @src do nosso repositorio
